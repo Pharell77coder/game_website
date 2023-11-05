@@ -13,6 +13,11 @@
   </head>
   <body>
 
+   <!-- Header -->
+   <div class="header">
+    <h1>PUISSANCE 4</h1>
+  </div>
+
     <!-- The sidebar -->
     <div class="sidebar">
       <a href="index.html">Item 1</a>
@@ -24,9 +29,22 @@
     </div>
   
     <!-- Page content -->
-    <div class="main" id="root">
-      <button>Suivant</button>
-    </div>
+    <main>
+      <form method="post">
+      
+        <div class="container">
+          <h2>Connexion</h2>
+          <label><b>Nom de l'utilisateur</b></label>
+          <input type="text" placeholder="Entrer votre nom d'utilisateur">
+      
+          <label><b>Mot de passe</b></label>
+          <input type="password" placeholder="Entrer votre mot de passe">
+
+          <button type="submit">Se connecter</button>
+          <label><input type="checkbox" checked="checked" name="remember">Se souvenir de moi?</label>
+        </div>
+      </form>
+  </main>
 
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/97126a2f40.js" crossorigin="anonymous"></script>
