@@ -114,7 +114,6 @@ img {
   vertical-align: middle;
 }
 
-
 /* The side navigation menu */
 .sidebar {
     margin: 0;
@@ -124,45 +123,49 @@ img {
     position: fixed;
     height: 100%;
     overflow: auto;
-  }
-  
-  .sidebar a {
+}
+
+.sidebar a {
     display: block;
     color: var(--title-color);
     padding: 16px;
     text-decoration: none;
-  }
-  
-  .sidebar a.active {
+}
+
+.sidebar a.active {
     background-color: var(--first-color);
     color: var(--title-color);
-  }
-  
-  .sidebar a:hover:not(.active) {
+}
+
+.sidebar a:hover:not(.active) {
     background-color: var(--body-color);
     color: var(--title-color);
-  }
-  
-  
-  div.content {
+}
+
+
+div.main {
     margin-left: 200px;
     padding: 1px 16px;
     height: 1000px;
-  }
-  
-  @media screen and (max-width: 700px) {
+}
+
+@media screen and (max-width: 700px) {
     .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
+        width: 100%;
+        height: auto;
+        position: relative;
     }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-  }
-  
-  @media screen and (max-width: 400px) {
     .sidebar a {
-      text-align: center;
-      float: none;
+        float: left;
     }
-  }
+    div.main {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
