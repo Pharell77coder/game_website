@@ -90,8 +90,7 @@ h3 {
 
 h1:hover, 
 h2:hover, 
-h3:hover,
-p:hover {
+h3:hover {
   color: blueviolet;
 }
 
@@ -115,62 +114,55 @@ img {
   vertical-align: middle;
 }
 
-/* Resuable css classes */
-.container {
-  max-width: 1080px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
-}
 
-.grid {
-  display: grid;
-}
-
-.section {
-  padding-top: 7rem;
-  padding-bottom: 2rem;
-}
-
-.section__title {
-  font-size: var(--h1-font-size);
-  margin-left: 0.875rem;
-  font-weight: var(--font-bold);
-  position: relative;
-  margin-bottom: 3.75rem;
-}
-
-.section__title::before {
-  content: '';
-  background: url(./assets/dots-bg.svg);
-  height: 2.25rem;
-  width: 2.25rem;
-  position: absolute;
-  left: -0.875rem;
-  top: -0.875rem;
-}
-
-.btn {
-  padding: 0.75rem 2rem;
-  line-height: 1;
-  border-radius: 1.875rem;
-  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
-  color: #fff;
-  display: inline-block;
-  background-color: var(--first-color);
-  font-weight: var(--font-bold);
-}
-
-@keyframes button-push {
-  50% {
-    transform: scale(0.8);
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: var(--body-color);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
   }
-  100% {
-    transform: scale(1);
+  
+  .sidebar a {
+    display: block;
+    color: var(--title-color);
+    padding: 16px;
+    text-decoration: none;
   }
-}
-
-.btn:hover {
-  animation: button-push 0.3s linear 1;
-  background-color: #4285F4;
-}
+  
+  .sidebar a.active {
+    background-color: var(--first-color);
+    color: var(--title-color);
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: var(--body-color);
+    color: var(--title-color);
+  }
+  
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
