@@ -200,7 +200,7 @@ main{
 }
 .container img {
   float: left;
-  border-radius: 50%;
+  border-radius: 5px;
   height: 100%;
 }
 
