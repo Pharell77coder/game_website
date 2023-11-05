@@ -100,6 +100,7 @@ ul {
 
 a {
   text-decoration: none;
+  font-size: var(--normal-font-size);
 }
 
 button {
@@ -119,7 +120,7 @@ img {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: var(--body-color);
+    background-color: var(--first-color);
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -127,25 +128,20 @@ img {
 
 .sidebar a {
     display: block;
-    color: var(--title-color);
-    padding: 16px;
+    color: var(--container-color);
+    padding: 1rem;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
-.sidebar a.active {
-    background-color: var(--first-color);
-    color: var(--title-color);
+.sidebar a:hover {
+    color: var(--first-color);
+    background-color: var(--container-color);
 }
-
-.sidebar a:hover:not(.active) {
-    background-color: var(--body-color);
-    color: var(--title-color);
-}
-
 
 div.main {
     margin-left: 200px;
-    padding: 1px 16px;
+    padding: 1px 1rem;
     height: 1000px;
 }
 
