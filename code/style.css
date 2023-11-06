@@ -104,6 +104,10 @@ li {
 li:hover {
   background-color: #00eeee;
 }
+li a{
+    color: white;
+    font-size: 1rem;
+  }
 
 a {
   text-decoration: none;
