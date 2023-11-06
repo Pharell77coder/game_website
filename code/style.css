@@ -214,9 +214,11 @@ table {
 }
 
 th, td {
-    border-top: 1px solid black;
     text-align: center;
-    padding: 8px;
+    padding: 0.5rem;
+}
+th {
+    border-bottom: 1px solid black;
 }
 tr {
     background-color: #f2f2f2;
