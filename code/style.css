@@ -96,7 +96,7 @@ li {
   background-color: #00ffff;
   padding: 1rem;
   font-size: 1rem;
-  margin: 1rem;
+  /*margin: 1rem;*/
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
 }
@@ -194,8 +194,7 @@ main{
 
 }
 
-.container,
-.footer {
+.container {
   padding: 1rem;
   margin-top: 1rem;
   text-align: center;
@@ -205,7 +204,7 @@ main{
 .container img {
   float: left;
   border-radius: 5px;
-  height: 100%;
+  width: 11rem;
 }
 
 @media screen and (max-width: 700px) {
