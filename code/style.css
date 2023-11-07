@@ -237,7 +237,6 @@ tr:hover {
     }
 }
 
-/* login */
 .container-login{
     padding: 1rem;
     margin-top: 1rem;
@@ -246,22 +245,35 @@ tr:hover {
     border-radius: 5px;
 }
 
-.container-index{
+.card{
     padding: 1rem;
     margin-top: 1rem;
     text-align: center;
     background: #ddd;
     border-radius: 5px;
 }
-.container-game{
-    padding: 1rem;
-    margin-top: 1rem;
-    text-align: center;
-    background: #ddd;
+.card img {
+    float: left;
     border-radius: 5px;
+    width: 11rem;
 }
-.container-index img {
-float: left;
-border-radius: 5px;
-width: 11rem;
+
+.frame1 {
+    grid-area: frame1;
+}
+.frame2 {
+    grid-area: frame2;
+}
+.frame3 {
+    grid-area: frame3;
+}
+
+.main-container-index{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto;
+    gap: 1rem;
+    grid-template-areas: 
+    "frame1 frame1"
+    "frame2 frame3";
 }
