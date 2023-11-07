@@ -170,6 +170,7 @@ img {
     color: var(--first-color);
     background-color: var(--container-color);
 }
+
 .header {
   display: flex;
   position: fixed;
@@ -235,14 +236,6 @@ tr:hover {
         overflow: auto;
         white-space: nowrap;
     }
-}
-
-.container-login{
-    padding: 1rem;
-    margin-top: 1rem;
-    text-align: center;
-    background: #ddd;
-    border-radius: 5px;
 }
 
 .card{
