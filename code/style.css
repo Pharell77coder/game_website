@@ -215,29 +215,6 @@ tr:hover {
     background-color: #e1e1e1;
 }
 
-@media screen and (max-width: 700px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    .sidebar a {
-        float: left;
-    }
-    main{
-      padding: 5rem 1rem 2rem 1rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .sidebar a {
-        text-align: center;
-        float: none;
-        overflow: auto;
-        white-space: nowrap;
-    }
-}
-
 .card{
     padding: 1rem;
     margin-top: 1rem;
@@ -269,4 +246,50 @@ tr:hover {
     grid-template-areas: 
     "frame1 frame1"
     "frame2 frame3";
+}
+
+.card-login {
+    padding: 1rem;
+    text-align: center;
+    background: white;
+    border: solid 1px #1669F2;
+    border-radius: 5px;
+    margin: 5rem 1rem 2rem 14rem;
+}
+
+input {
+    font-size: 8px;
+}
+input:hover {
+    border: solid 1px #1669F2;
+}
+h2{
+    border-bottom: solid #1669F2 1px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    main{
+      padding: 5rem 1rem 2rem 1rem;
+    }
+    .card-login{
+        margin: 1rem;
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+        overflow: auto;
+        white-space: nowrap;
+    }
 }
