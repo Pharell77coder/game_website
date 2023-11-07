@@ -194,19 +194,6 @@ main{
 
 }
 
-.container {
-  padding: 1rem;
-  margin-top: 1rem;
-  text-align: center;
-  background: #ddd;
-  border-radius: 5px;
-}
-.container img {
-  float: left;
-  border-radius: 5px;
-  width: 11rem;
-}
-
 table {
     border-collapse: collapse;
     width: 100%;
@@ -248,4 +235,33 @@ tr:hover {
         overflow: auto;
         white-space: nowrap;
     }
+}
+
+/* login */
+.container-login{
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.container-index{
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    background: #ddd;
+    border-radius: 5px;
+}
+.container-game{
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    background: #ddd;
+    border-radius: 5px;
+}
+.container-index img {
+float: left;
+border-radius: 5px;
+width: 11rem;
 }
