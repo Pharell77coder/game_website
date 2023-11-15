@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Pharell">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="..\..\res\favicon.ico" type="image/x-icon"/>
+    <title>Puissance 4</title>
+
+    <!-- Links Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+  </head>
+  <body>
+
+    <!-- Header -->
+    <div class="header">
+        <a href="..\index\index.html"><img src="..\..\res\Puissance4logo.png" style="width: 18%;height: 18%;"/></a>
+    </div>
+
+    <!-- The sidebar -->
+    <div class="sidebar">
+        <a href="..\login\login.html"><i class="fa fa-fw fa-cog"></i> Connexion</a>
+        <a href="..\profil\profil.html"><i class="fa fa-fw fa-user"></i> Profil</a>
+        <a href="#"><i class="fa fa-fw fa-home"></i> Item 3</a>
+        <a href="#"><i class="fa fa-fw fa-home"></i> Item 4</a>
+        <a href="#"><i class="fa fa-fw fa-home"></i> Item 5</a>
+    </div>
+  
+    <!-- Page content -->
+    <main>
+        <div class="main-container-index">
+        <div class="card frame1">
+            <img src="..\..\res\icon.jpg" alt="image puissance 4">
+            <ul>
+              <li><a href="..\jeu\jeu.html">Jouer Contre Ordinateur</a></li>
+              <li><a href="..\jeu\jeu.html">Partie en ligne</a></li>
+              <li><a href="..\jeu\jeu.html">Jouer Contre Un Ami</a></li>
+            </ul>
+        </div>
+        <div class="card frame2">
+            <h3>Classement</h3>
+            <div id="classement"></div>
+        </div>
+        <div class="card frame3">
+            <h3>Liste amis</h3>
+            <div id="amis"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="amis.js"></script>
+    <script src="classement.js"></script>
+    <script src="https://kit.fontawesome.com/97126a2f40.js" crossorigin="anonymous"></script>
+  </body>
+</html>
