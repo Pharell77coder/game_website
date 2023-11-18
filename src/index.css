@@ -125,3 +125,10 @@ main{
   margin-right: 2rem;
   margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 700px) {
+  main{
+    margin-left: 1rem;
+    margin-top: 8rem;
+  }
+}
