@@ -26,12 +26,11 @@ li {
 background-color: #00ffff;
 padding: 1rem;
 font-size: 1rem;
-border-radius: 5px;
 transition: all 0.2s ease-in-out;
 }
 
 li:hover {
-background-color: #00eeee;
+background-color: #00eeff;
 }
 li a{
     color: white;
@@ -47,10 +46,22 @@ li a{
 
 .acceuil{
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto;
     gap: 1rem;
     grid-template-areas: 
     "frame1 frame1"
     "frame2 frame3";
-  }
+}
+
+.frame1 {
+    grid-area: frame1;
+}
+
+.frame2 {
+    grid-area: frame2;
+}
+
+.frame3 {
+    grid-area: frame3;
+}
