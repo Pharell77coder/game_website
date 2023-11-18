@@ -28,3 +28,23 @@
     color: var(--first-color);
     background-color: var(--container-color);
 }
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+        overflow: auto;
+        white-space: nowrap;
+    }
+}
