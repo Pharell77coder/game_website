@@ -12,10 +12,11 @@ th {
     border-bottom: 1px solid black;
 }
 tr {
-    background-color: #f2f2f2;
+    background-color: rgba( 255,255,255, 0.8);
 }
+
 tr:hover {
-    background-color: #e1e1e1;
+    background-color: rgba( 255,255,255, 0.6);
 }
 
 ul {
@@ -23,18 +24,29 @@ ul {
 }
 
 li {
-background-color: #00ffff;
+background-color:skyblue;
 padding: 1rem;
 font-size: 1rem;
 transition: all 0.2s ease-in-out;
 }
 
 li:hover {
-background-color: #00eeff;
+background-color: rgba(135, 207, 235, 0.8);
 }
+
 li a{
     color: white;
     font-size: 1rem;
+}
+
+.litop{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.libottom{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .acceuil{
@@ -58,10 +70,25 @@ li a{
     grid-area: frame1;
 }
 
+.frame1 img{
+    float: right;
+    width: 11.20rem;
+    height: auto;
+    vertical-align: middle;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
 .frame2 {
     grid-area: frame2;
+    background-color: skyblue;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 .frame3 {
     grid-area: frame3;
+    background-color: skyblue;
+    padding: 1rem;
+    border-radius: 5px;
 }

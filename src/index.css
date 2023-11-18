@@ -4,7 +4,7 @@
 /* varibles css */
 :root {
   /* COLORS : HSL(hue, saturation, lightness) */
-  --first-color: hsl(187, 89%, 47%);
+  --first-color: skyblue;
   --title-color: hsl(244, 24%, 26%);
   --text-color: hsl(244, 16%, 43%);
   --body-color: hsl(258, 60%, 98%);
@@ -111,12 +111,6 @@ button {
 button:hover{
   background-color: transparent;
   color: #1669F2;
-}
-
-img { 
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
 }
 
 main{
