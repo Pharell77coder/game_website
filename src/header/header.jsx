@@ -1,10 +1,11 @@
 import './header.css';
 import logo from './Puissance4logo copy.png'
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div class="header">
-        <a href="#"><img src={logo} /></a>
+      <Link to="/"><img src={logo} /></Link>
     </div>
   );
 }
