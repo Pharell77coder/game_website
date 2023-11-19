@@ -94,12 +94,12 @@ li a{
 }
 
 @media screen and (max-width: 700px) {
-    .acceuil{
-      display: grid;
-      grid-template-columns: 1fr; 
-      grid-template-areas: 
-      "frame1"
-      "frame2"
-      "frame3";
-    } 
-  }
+.acceuil{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-areas: 
+    "frame1"
+    "frame2"
+    "frame3";
+} 
+}
