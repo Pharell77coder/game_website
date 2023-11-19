@@ -1,5 +1,4 @@
 import './accueil.css';
-import icon from './icon.jpg';
 import Friends from './amis.jsx';
 import Ranking from './classement.jsx';
 
