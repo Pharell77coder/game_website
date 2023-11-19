@@ -10,23 +10,22 @@
     top: 55px;
 }
 
-.sidebar a {
+.sidebar li {
     display: block;
     padding: 10px;
-    color: var(--container-color);
     padding: 1rem;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     text-align: center;
     padding: 12px;
-    color: white;
     text-decoration: none;
     font-size: 17px;
 }
 
-.sidebar a:hover {
-    color: var(--first-color);
-    background-color: var(--container-color);
+
+.sidebar li:hover {
+    color: skyblue;
+    background-color: #98dffc;
 }
 
 @media screen and (max-width: 700px) {
@@ -40,13 +39,13 @@
         top: 55px;
         left: 0; 
     }
-    .sidebar a {
+    .sidebar li {
         float: left;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .sidebar a {
+    .sidebar li {
         text-align: center;
         float: none;
         overflow: auto;
