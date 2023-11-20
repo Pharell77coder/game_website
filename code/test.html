@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puissance 4</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    .board {
+      display: grid;
+      grid-template-columns: repeat(7, 60px);
+      gap: 5px;
+    }
+
+    .cell {
+      width: 60px;
+      height: 60px;
+      border: 1px solid #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const rows = 6;
+      const cols = 7;
+      const board = document.getElementById('app');
+      let currentPlayer = 1;
+      let isGameOver = false;
+      const cells = [];
+
+      // Create the game board
+      for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; j++) {
+          const cell = document.createElement('div');
+          cell.classList.add('cell');
+          cell.dataset.row = i;
+          cell.dataset.col = j;
+          cell.addEventListener('click', () => handleMove(j));
+          board.appendChild(cell);
+          cells.push(cell);
+        }
+      }
+
+      // Function to handle player moves
+      function handleMove(col) {
+        if (isGameOver) return;
+
+        const row = getEmptyRow(col);
+        if (row !== -1) {
+          const index = row * cols + col;
+          cells[index].classList.add(`player${currentPlayer}`);
+          if (checkWin(row, col)) {
+            alert(`Player ${currentPlayer} wins!`);
+            isGameOver = true;
+          } else {
+            currentPlayer = 3 - currentPlayer; // Switch player (1 -> 2, 2 -> 1)
+          }
+        }
+      }
+
+      // Check for a win
+      function checkWin(row, col) {
+        return (
+          checkDirection(row, col, 0, 1) || // Horizontal
+          checkDirection(row, col, 1, 0) || // Vertical
+          checkDirection(row, col, 1, 1) || // Diagonal /
+          checkDirection(row, col, 1, -1)   // Diagonal \
+        );
+      }
+
+      function checkDirection(row, col, rowInc, colInc) {
+        const player = currentPlayer;
+        let count = 0;
+
+        for (let i = -3; i <= 3; i++) {
+          const newRow = row + i * rowInc;
+          const newCol = col + i * colInc;
+
+          if (newRow >= 0 && newRow < rows && newCol >= 0 && newCol < cols) {
+            const index = newRow * cols + newCol;
+            if (cells[index].classList.contains(`player${player}`)) {
+              count++;
+              if (count === 4) {
+                return true;
+              }
+            } else {
+              count = 0;
+            }
+          }
+        }
+
+        return false;
+      }
+
+      // Find the lowest empty row in a column
+      function getEmptyRow(col) {
+        for (let i = rows - 1; i >= 0; i--) {
+          const index = i * cols + col;
+          if (!cells[index].classList.contains('player1') && !cells[index].classList.contains('player2')) {
+            return i;
+          }
+        }
+        return -1;
+      }
+    });
+  </script>
+</body>
+</html>
+

@@ -15,3 +15,13 @@ button:hover{
     background-color: transparent;
     color: #1669F2;
 }
+
+form {
+    background-color: skyblue;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+form:hover {
+    border: solid skyblue 1px;
+}

@@ -8,9 +8,11 @@ th, td {
     text-align: center;
     padding: 0.5rem;
 }
+
 th {
     border-bottom: 1px solid black;
 }
+
 tr {
     background-color: rgba( 255,255,255, 0.8);
 }
@@ -70,15 +72,6 @@ li a{
     grid-area: frame1;
 }
 
-.frame1 img{
-    float: right;
-    width: 11.20rem;
-    height: auto;
-    vertical-align: middle;
-    padding: 1rem;
-    border-radius: 5px;
-}
-
 .frame2 {
     grid-area: frame2;
     background-color: skyblue;
@@ -94,12 +87,12 @@ li a{
 }
 
 @media screen and (max-width: 700px) {
-.acceuil{
-    display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-areas: 
-    "frame1"
-    "frame2"
-    "frame3";
-} 
+    .acceuil{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+        "frame1"
+        "frame2"
+        "frame3";
+    } 
 }

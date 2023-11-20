@@ -2,7 +2,7 @@ import React from 'react'
 
 function login() {
   return (
-    <div class="card-login">      
+    <div class="card">      
       <form method="post">
         <h2>Connexion</h2><br></br>
         <label><b>Nom de l'utilisateur</b></label><br></br>
@@ -12,8 +12,7 @@ function login() {
         <input type="password" placeholder="Entrer votre mot de passe" /><br></br>
 
         <button type="submit">Se connecter</button><br></br>
-        <label><input type="checkbox" checked="checked" name="remember" />Se souvenir de moi?</label>
-       </form>
+     </form>
     </div>
   )
 }
