@@ -1,20 +1,72 @@
-import React from 'react'
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import './login.css';
+/*
+async function loginUser(credentials) {
+ return fetch('http://localhost:8080/login', {
+   method: 'POST',
+   headers: {
+     'Content-Type': 'application/json'
+   },
+   body: JSON.stringify(credentials)
+ })
+   .then(data => data.json())
+}
 
-function login() {
-  return (
-    <div class="card">      
-      <form method="post">
-        <h2>Connexion</h2><br></br>
-        <label><b>Nom de l'utilisateur</b></label><br></br>
-        <input type="text" placeholder="Entrer votre nom d'utilisateur" /><br></br>
+export default function Login({ setToken }) {
+  const [username, setUserName] = useState();
+  const [password, setPassword] = useState();
 
-        <label><b>Mot de passe</b></label><br></br>
-        <input type="password" placeholder="Entrer votre mot de passe" /><br></br>
+  const handleSubmit = async e => {
+    e.preventDefault();
+    const token = await loginUser({
+      username,
+      password
+    });
+    setToken(token);
+  }
 
-        <button type="submit">Se connecter</button><br></br>
-     </form>
+  return(
+    <div className="login-wrapper">
+      <h1>Please Log In</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          <p>Username</p>
+          <input type="text" onChange={e => setUserName(e.target.value)} />
+        </label>
+        <label>
+          <p>Password</p>
+          <input type="password" onChange={e => setPassword(e.target.value)} />
+        </label>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
     </div>
   )
 }
+Login.propTypes = {
+  setToken: PropTypes.func.isRequired
+};*/
 
-export default login
+export default function Login() {
+
+  return(
+    <div className="login-wrapper">
+      <h1>Please Log In</h1>
+      <form>
+        <label>
+          <p>Username</p>
+          <input type="text" />
+        </label>
+        <label>
+          <p>Password</p>
+          <input type="password" />
+        </label>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  )
+}
