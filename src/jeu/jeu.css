@@ -1,0 +1,21 @@
+.main_game{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto;
+    gap: 1rem;
+    grid-template-areas: 
+    "player1 player2"
+    "gridgame gridgame";
+}
+
+.player1 {
+    grid-area: player1;
+}
+
+.player2 {
+    grid-area: player2;
+}
+
+.gridgame {
+    grid-area: gridgame;
+}
